@@ -14,19 +14,19 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/codeHub/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"zpliu1126.github.io","root":"/codeHub/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"zpliu1126.github.io","root":"/codeHub/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="keeping learn">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Code Hub">
 <meta property="og:url" content="https://zpliu1126.github.io/codeHub/index.html">
 <meta property="og:site_name" content="Code Hub">
-<meta property="og:description" content="keeping learn">
 <meta property="og:locale" content="en_US">
+<meta property="article:author" content="zpliu">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://zpliu1126.github.io/codeHub/">
@@ -96,6 +96,7 @@
       <h1 class="site-title">Code Hub</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
+      <p class="site-subtitle" itemprop="description">keeping learn</p>
   </div>
 
   <div class="site-nav-right">
@@ -110,14 +111,19 @@
 
 <nav class="site-nav">
   <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
+        <li class="menu-item menu-item-首页">
 
-    <a href="/codeHub/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="/codeHub/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
     <a href="/codeHub/archives/" rel="section"><i class="fa fa-fw fa-archiveasad"></i>Archives<span class="badge">2</span></a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/codeHub/categories" rel="section"><i class="fa fa-fw fa-categories"></i>分类</a>
 
   </li>
         
@@ -167,10 +173,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
   <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
@@ -194,8 +196,8 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/codeHub/uploads/themeImg/logo.png">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="keeping learn">
+      <meta itemprop="name" content="zpliu">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -213,10 +215,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-03-21 22:03:33 / Modified: 22:37:05" itemprop="dateCreated datePublished" datetime="2020-03-21T22:03:33+08:00">2020-03-21</time>
+              <time title="Created: 2020-03-21 22:03:33" itemprop="dateCreated datePublished" datetime="2020-03-21T22:03:33+08:00">2020-03-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-22 01:25:50" itemprop="dateModified" datetime="2020-03-22T01:25:50+08:00">2020-03-22</time>
+              </span>
 
           
   
@@ -254,152 +262,15 @@
 <blockquote>
 <p> <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> </p>
 </blockquote>
-<h3 id="部署到云端"><a href="#部署到云端" class="headerlink" title="部署到云端"></a>部署到云端</h3><h4 id="1-GithubPage进行部署"><a href="#1-GithubPage进行部署" class="headerlink" title="1.GithubPage进行部署"></a>1.GithubPage进行部署</h4><ol>
-<li><p>在github中创建一个仓库</p>
-</li>
-<li><p>将hexo push到github仓库中</p>
-</li>
-</ol>
-<p>下载对应的插件</p>
-<p><code>--save</code>参数会将插件信息保存在<code>package.json</code>文件中</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>配置站点目录下<code>_config.yml</code>文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:zpliu1126/codeHub.git</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
-
-<p>部署实际上就是在将hexo编译生成的<code>public</code>目录下的所有文件推送到云端</p>
-<p>部署完成后通过访问网址即可访问到hexo静态博客</p>
-<blockquote>
-<p> https://&lt;Github账号名称&gt;.github.io /仓库名</p>
-</blockquote>
-<h4 id="2-部署到腾讯云"><a href="#2-部署到腾讯云" class="headerlink" title="2.部署到腾讯云"></a>2.部署到腾讯云</h4><p>当有多个云端时，配置文件如下进行配置</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line"> -  <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@github.com:zpliu1126/codeHub.git</span><br><span class="line">    branch: gh-pages</span><br><span class="line"> -  <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@e.coding.net:biocodehub/codeHub.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>​    hexo中默认的主题是<code>landscape</code>，可以在github中搜索对应的主题选择下载</p>
-<h4 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h4><p>我这里使用到的是<code>next</code>主题</p>
-<ol>
-<li>下载对应的主题文件</li>
-<li>将主题整个文件夹粘贴到<code>themes</code>目录下</li>
-<li>更改站点文件夹配置文件中theme字段为对应的主题名</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载对应的主题 </span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="主题优化"><a href="#主题优化" class="headerlink" title="主题优化"></a>主题优化</h4><p><code>Next</code>主题优化官方文档</p>
-<blockquote>
-<p> <a href="https://theme-next.org/docs/theme-settings/" target="_blank" rel="noopener">https://theme-next.org/docs/theme-settings/</a> </p>
-</blockquote>
-<ul>
-<li><p>自定义样式文件</p>
-<p><code>Next</code>最新版主题支持将样式文件放置在主题文件夹之外，只需要在主题文件夹中进行配置</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">custom_file_path:</span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="comment">#footer: source/_data/footer.swig</span></span><br><span class="line">   style: <span class="built_in">source</span>/_data/styles.styl</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>添加背景图片</p>
-<p>添加主题自定义样式</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    background:url(/images/themeImg/splash.png);</span><br><span class="line">    background-size:cover;</span><br><span class="line">    background-repeat:no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>转载协议</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  license: by-nc-sa</span><br><span class="line">  sidebar: <span class="literal">true</span></span><br><span class="line">  post: <span class="literal">true</span></span><br><span class="line">  language:</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>自定义<code>logo</code></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Custom Logo (Do not support scheme Mist)</span></span><br><span class="line">custom_logo: /images/themeImg/logo.png</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>代码高亮显示和复制按钮</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  <span class="comment"># Code Highlight theme</span></span><br><span class="line">  <span class="comment"># Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span></span><br><span class="line">  <span class="comment"># See: https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line">  highlight_theme: night</span><br><span class="line">  <span class="comment"># Add copy button on codeblock</span></span><br><span class="line">  copy_button:</span><br><span class="line">    <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Show text copy result.</span></span><br><span class="line">    show_result: <span class="literal">true</span></span><br><span class="line">    <span class="comment"># Available values: default | flat | mac</span></span><br><span class="line">    style:</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>阅读进度条</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">reading_progress:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  color: <span class="string">"#37c6c0"</span></span><br><span class="line">  height: 2px</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>书签</p>
-<p>当下次访问时自动滚动到对应位置</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">bookmark:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Customize the color of the bookmark.</span></span><br><span class="line">  color: <span class="string">"#222"</span></span><br><span class="line">  <span class="comment"># If auto, save the reading progress when closing the page or clicking the bookmark-icon.</span></span><br><span class="line">  <span class="comment"># If manual, only save it by clicking the bookmark-icon.</span></span><br><span class="line">  save: auto</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Follow me 标签</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Follow me on GitHub banner in right-top corner.</span></span><br><span class="line">github_banner:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  permalink: https://github.com/yourname</span><br><span class="line">  title: Follow me on GitHub</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>字体设置</p>
-<p><code>Next</code>为5中类型提供字体设置</p>
-<ul>
-<li>全局字体设置</li>
-<li>title字体设置</li>
-<li>标题字体设置 h1 、h2</li>
-<li>文章字体设置</li>
-<li>代码字体设置</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  <span class="comment"># Use custom fonts families or not.</span></span><br><span class="line">  <span class="comment"># Depended options: `external` and `family`.</span></span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Uri of fonts host, e.g. //fonts.googleapis.com (Default).</span></span><br><span class="line">  host:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font options:</span></span><br><span class="line">  <span class="comment"># `external: true` will load this font family from `host` above.</span></span><br><span class="line">  <span class="comment"># `family: Times New Roman`. Without any quotes.</span></span><br><span class="line">  <span class="comment"># `size: x.x`. Use `em` as unit. Default: 1 (16px)</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Global font settings used for all elements inside &lt;body&gt;.</span></span><br><span class="line">  global:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Monda</span><br><span class="line">    size: 1.125</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for site title (.site-title).</span></span><br><span class="line">  title:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Lobster Two</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for headlines (&lt;h1&gt; to &lt;h6&gt;).</span></span><br><span class="line">  headings:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Amita</span><br><span class="line">    size:</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for posts (.post-body).</span></span><br><span class="line">  posts:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: Roboto Slab</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for &lt;code&gt; and code blocks.</span></span><br><span class="line">  codes:</span><br><span class="line">    external: <span class="literal">true</span></span><br><span class="line">    family: PT Mono</span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li><p>安装插件</p>
-<p>支持两种安装方法</p>
-<ol>
-<li>本地安装</li>
-<li>使用CDN links</li>
-</ol>
-<p>如果你的站点是部署在一些免费的云端，推荐使用CDN links，因为它加载起来更快</p>
-<p><strong>本地安装</strong></p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Easily enable fast Ajax navigation on your website.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pjax</span></span><br><span class="line">pjax: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>CDN links 安装</p>
-<blockquote>
-<p> jsDelivr CDN is recommended to deliver our third-party plugins </p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Script Vendors. Set a CDN address for the vendor you want to customize.</span></span><br><span class="line"><span class="comment"># Be aware that you would better use the same version as internal ones to avoid potential problems.</span></span><br><span class="line"><span class="comment"># Remember to use the https protocol of CDN files when you enable https on your site.</span></span><br><span class="line">vendors:</span><br><span class="line">  <span class="comment"># Internal path prefix.</span></span><br><span class="line">  _internal: lib</span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li>设置整体布局</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>配置菜单栏</p>
-<ol>
-<li>第一栏表示菜单名</li>
-<li>第二栏表示相对url</li>
-</ol>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  archives: /archives/ || archiveasad</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
+<h3 id="部署到云端"><a href="#部署到云端" class="headerlink" title="部署到云端"></a>部署到云端</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/codeHub/2020/03/21/03hexo%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -422,8 +293,8 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/codeHub/uploads/themeImg/logo.png">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="keeping learn">
+      <meta itemprop="name" content="zpliu">
+      <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -478,12 +349,14 @@
 
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/codeHub/2020/03/21/hello-world/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -557,10 +430,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt=""
+    <img class="site-author-image" itemprop="image" alt="zpliu"
       src="/codeHub/uploads/themeImg/logo.png">
-  <p class="site-author-name" itemprop="name"></p>
-  <div class="site-description" itemprop="description">keeping learn</div>
+  <p class="site-author-name" itemprop="name">zpliu</p>
+  <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -573,13 +446,36 @@
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zpliu1126" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zpliu1126" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/codeHub/1944532210@qq.com" title="E-Mail → 1944532210@qq.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
   <div class="cc-license motion-element" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/codeHub/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-cn" class="cc-opacity" rel="noopener" target="_blank"><img src="/codeHub/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
   </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://cotton.hzau.edu.cn/" title="http:&#x2F;&#x2F;cotton.hzau.edu.cn&#x2F;" rel="noopener" target="_blank">GCGI</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -597,12 +493,12 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2019 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder"></span>
+  <span class="author" itemprop="copyrightHolder">codeHub</span>
 </div>
 
         
@@ -621,6 +517,9 @@
   
   <script src="/codeHub/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/codeHub/lib/velocity/velocity.min.js"></script>
   <script src="/codeHub/lib/velocity/velocity.ui.min.js"></script>
 
@@ -738,7 +637,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
       notify     : false,
       appId      : 'd4VOUvNSU5WGIC3AjjM8UArx-gzGzoHsz',
       appKey     : '5n9Xu8XStUzmAKyncMgSp0px',
-      placeholder: "Just go go",
+      placeholder: "有任何问题欢迎留言或者邮件告知",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
