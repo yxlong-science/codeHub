@@ -21,15 +21,15 @@
     var CONFIG = {"hostname":"zpliu1126.github.io","root":"/codeHub/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="hexo服务搭建初始化hexo​    在命令行中运行一下命令 12345#初始化hexohexo init &lt;folder_name&gt;cd &lt;folder_name&gt;#下载相关依赖npm i  ​    hexo 初始化完成之后，在folder_name目录下将会产生一下文件和文件夹 ​    hexo相关的命令均需要在bash中进入folder_name目录后运行 12">
+  <meta name="description" content="hexo服务搭建Hexo  一款简洁并且高效的博客框架，结合markdown语法，让你的想法展现的淋漓尽致。通过本地编译markdown文件生成html 静态文件，部署到云端；使得笔记得到永久保存。利用Github、腾讯云等免费代码仓库存储服务，让你能够随时随地编辑；不受设备影响。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo服务搭建">
 <meta property="og:url" content="https://zpliu1126.github.io/codeHub/2020/03/21/03hexo%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Code Hub">
-<meta property="og:description" content="hexo服务搭建初始化hexo​    在命令行中运行一下命令 12345#初始化hexohexo init &lt;folder_name&gt;cd &lt;folder_name&gt;#下载相关依赖npm i  ​    hexo 初始化完成之后，在folder_name目录下将会产生一下文件和文件夹 ​    hexo相关的命令均需要在bash中进入folder_name目录后运行 12">
+<meta property="og:description" content="hexo服务搭建Hexo  一款简洁并且高效的博客框架，结合markdown语法，让你的想法展现的淋漓尽致。通过本地编译markdown文件生成html 静态文件，部署到云端；使得笔记得到永久保存。利用Github、腾讯云等免费代码仓库存储服务，让你能够随时随地编辑；不受设备影响。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-21T14:03:33.765Z">
-<meta property="article:modified_time" content="2020-03-22T02:50:31.730Z">
+<meta property="article:modified_time" content="2020-03-22T05:07:28.943Z">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
 
@@ -221,7 +221,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-22 10:50:31" itemprop="dateModified" datetime="2020-03-22T10:50:31+08:00">2020-03-22</time>
+                <time title="Modified: 2020-03-22 13:07:28" itemprop="dateModified" datetime="2020-03-22T13:07:28+08:00">2020-03-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -258,7 +258,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="hexo服务搭建"><a href="#hexo服务搭建" class="headerlink" title="hexo服务搭建"></a>hexo服务搭建</h1><h3 id="初始化hexo"><a href="#初始化hexo" class="headerlink" title="初始化hexo"></a>初始化hexo</h3><p>​    在命令行中运行一下命令</p>
+        <h1 id="hexo服务搭建"><a href="#hexo服务搭建" class="headerlink" title="hexo服务搭建"></a>hexo服务搭建</h1><span class="label success">Hexo</span>  一款简洁并且高效的博客框架，结合markdown语法，让你的想法展现的淋漓尽致。通过本地编译markdown文件生成html 静态文件，部署到云端；使得笔记得到永久保存。利用Github、腾讯云等免费代码仓库存储服务，让你能够随时随地编辑；不受设备影响。
+
+<a id="more"></a>
+
+<h3 id="1-初始化hexo"><a href="#1-初始化hexo" class="headerlink" title="1.初始化hexo"></a>1.初始化hexo</h3><p>​    在命令行中运行一下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#初始化hexo</span></span><br><span class="line">hexo init &lt;folder_name&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder_name&gt;</span><br><span class="line"><span class="comment">#下载相关依赖</span></span><br><span class="line">npm i</span><br></pre></td></tr></table></figure>
 
 <p>​    hexo 初始化完成之后，在<code>folder_name</code>目录下将会产生一下文件和文件夹</p>
@@ -269,7 +273,7 @@
 <blockquote>
 <p> <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> </p>
 </blockquote>
-<h3 id="部署到云端"><a href="#部署到云端" class="headerlink" title="部署到云端"></a>部署到云端</h3><h4 id="1-GithubPage进行部署"><a href="#1-GithubPage进行部署" class="headerlink" title="1.GithubPage进行部署"></a>1.GithubPage进行部署</h4><ol>
+<h3 id="2-部署到云端"><a href="#2-部署到云端" class="headerlink" title="2.部署到云端"></a>2.部署到云端</h3><h4 id="2-1GithubPage进行部署"><a href="#2-1GithubPage进行部署" class="headerlink" title="2.1GithubPage进行部署"></a>2.1GithubPage进行部署</h4><ol>
 <li><p>在github中创建一个仓库</p>
 </li>
 <li><p>将hexo push到github仓库中</p>
@@ -287,13 +291,13 @@
 <blockquote>
 <p> https://&lt;Github账号名称&gt;.github.io /仓库名</p>
 </blockquote>
-<h4 id="2-部署到腾讯云"><a href="#2-部署到腾讯云" class="headerlink" title="2.部署到腾讯云"></a>2.部署到腾讯云</h4><p>当有多个云端时，配置文件如下进行配置</p>
+<h4 id="2-2部署到腾讯云"><a href="#2-2部署到腾讯云" class="headerlink" title="2.2部署到腾讯云"></a>2.2部署到腾讯云</h4><p>当有多个云端时，配置文件如下进行配置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line"> -  <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@github.com:zpliu1126/codeHub.git</span><br><span class="line">    branch: gh-pages</span><br><span class="line"> -  <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@e.coding.net:biocodehub/codeHub.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
 
 
 
-<h3 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h3><p>​    hexo中默认的主题是<code>landscape</code>，可以在github中搜索对应的主题选择下载</p>
-<h4 id="主题安装"><a href="#主题安装" class="headerlink" title="主题安装"></a>主题安装</h4><p>我这里使用到的是<code>next</code>主题</p>
+<h3 id="3-自定义主题"><a href="#3-自定义主题" class="headerlink" title="3.自定义主题"></a>3.自定义主题</h3><p>​    hexo中默认的主题是<code>landscape</code>，可以在github中搜索对应的主题选择下载</p>
+<h4 id="3-1主题安装"><a href="#3-1主题安装" class="headerlink" title="3.1主题安装"></a>3.1主题安装</h4><p>我这里使用到的是<code>next</code>主题</p>
 <ol>
 <li>下载对应的主题文件</li>
 <li>将主题整个文件夹粘贴到<code>themes</code>目录下</li>
@@ -303,7 +307,7 @@
 
 
 
-<h4 id="主题优化"><a href="#主题优化" class="headerlink" title="主题优化"></a>主题优化</h4><p><code>Next</code>主题优化官方文档</p>
+<h4 id="3-2主题优化"><a href="#3-2主题优化" class="headerlink" title="3.2主题优化"></a>3.2主题优化</h4><p><code>Next</code>主题优化官方文档</p>
 <blockquote>
 <p> <a href="https://theme-next.org/docs/theme-settings/" target="_blank" rel="noopener">https://theme-next.org/docs/theme-settings/</a> </p>
 </blockquote>
@@ -317,6 +321,7 @@
 <ul>
 <li><p>添加背景图片</p>
 <p>添加主题自定义样式</p>
+<p><strong><em>修改样式时，最后将public文件夹全部删除，然后<code>hexo g</code>重新编译生成css文件</em></strong></p>
 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    background:url(/images/themeImg/splash.png);</span><br><span class="line">    background-size:cover;</span><br><span class="line">    background-repeat:no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -380,13 +385,13 @@
 <p><strong>本地安装</strong></p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Easily enable fast Ajax navigation on your website.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pjax</span></span><br><span class="line">pjax: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#在bash中安装下载对应插件</span></span><br><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pjax <span class="built_in">source</span>/lib/pjax</span><br><span class="line"><span class="comment"># 启用pjax插件</span></span><br><span class="line"><span class="comment"># Easily enable fast Ajax navigation on your website.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pjax</span></span><br><span class="line">pjax: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 
 <p>CDN links 安装</p>
 <blockquote>
 <p> jsDelivr CDN is recommended to deliver our third-party plugins </p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Script Vendors. Set a CDN address for the vendor you want to customize.</span></span><br><span class="line"><span class="comment"># Be aware that you would better use the same version as internal ones to avoid potential problems.</span></span><br><span class="line"><span class="comment"># Remember to use the https protocol of CDN files when you enable https on your site.</span></span><br><span class="line">vendors:</span><br><span class="line">  <span class="comment"># Internal path prefix.</span></span><br><span class="line">  _internal: lib</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Script Vendors. Set a CDN address for the vendor you want to customize.</span></span><br><span class="line"><span class="comment"># Be aware that you would better use the same version as internal ones to avoid potential problems.</span></span><br><span class="line"><span class="comment"># Remember to use the https protocol of CDN files when you enable https on your site.</span></span><br><span class="line">vendors:</span><br><span class="line">  <span class="comment"># Internal path prefix.</span></span><br><span class="line">  _internal: lib</span><br><span class="line">  pjax: https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js</span><br></pre></td></tr></table></figure>
 
 
 
@@ -396,24 +401,171 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li><p>配置菜单栏</p>
-<ol>
+<li>配置菜单栏<ol>
 <li>第一栏表示菜单名</li>
 <li>第二栏表示相对url</li>
+<li><code>||</code>后表示icon</li>
 </ol>
 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  <span class="comment">#about: /about/ || user</span></span><br><span class="line">  <span class="comment">#tags: /tags/ || tags</span></span><br><span class="line">  <span class="comment">#categories: /categories/ || th</span></span><br><span class="line">  archives: /archives/ || archiveasad</span><br></pre></td></tr></table></figure>
 
+<ul>
+<li>菜单栏的一些修饰<ul>
+<li>显示icon</li>
+<li>显示条目数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Enable / Disable menu icons / item badges.</span></span><br><span class="line">menu_settings:</span><br><span class="line">  icons: <span class="literal">true</span></span><br><span class="line">  badges: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>条目数支持中文</p>
+<p>修改<code>next\layout\_partials\header\menu-item.swig</code>文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.menu_settings.badges %&#125;</span><br><span class="line">  &#123;%- <span class="built_in">set</span> badges = &#123;</span><br><span class="line">    <span class="string">'文章'</span>  : site.posts.length,</span><br><span class="line">    <span class="string">'分类'</span>: site.categories.length,</span><br><span class="line">    <span class="string">'标签'</span>      : site.tags.length</span><br><span class="line">    &#125;</span><br><span class="line">  %&#125;</span><br></pre></td></tr></table></figure>
 
 
 
+<ul>
+<li><p>侧边栏显示头像</p>
+<p>支持将图片放在<code>theme</code>文件夹之外，例如在  site directory <code>source/uploads/</code> 下</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sidebar Avatar</span></span><br><span class="line">avatar:</span><br><span class="line">  <span class="comment"># Replace the default image and set the url here.</span></span><br><span class="line">  url: /images/avatar.gif</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>编辑站点信息</p>
+<ul>
+<li>author</li>
+<li>description</li>
+</ul>
+<p>配置<code>hexo/_config.yml</code>文件</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line">author:</span><br><span class="line">description:</span><br></pre></td></tr></table></figure>
 
 
 
+<h3 id="4-第三方评论系统"><a href="#4-第三方评论系统" class="headerlink" title="4.第三方评论系统"></a>4.第三方评论系统</h3><table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">推荐指数</th>
+<th align="left">优点</th>
+<th align="left">缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></td>
+<td align="left">4</td>
+<td align="left">每天30000条评论，10GB的储存</td>
+<td align="left">作者评论无标识</td>
+</tr>
+<tr>
+<td align="left"><a href="https://livere.com/" target="_blank" rel="noopener">来必力/livere</a></td>
+<td align="left">4</td>
+<td align="left">多种账号登录</td>
+<td align="left">评论无法导出</td>
+</tr>
+<tr>
+<td align="left"><a href="http://changyan.kuaizhan.com/" target="_blank" rel="noopener">畅言</a></td>
+<td align="left">3</td>
+<td align="left">美观</td>
+<td align="left">必须备案域名</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/imsun/gitment" target="_blank" rel="noopener">gitment</a></td>
+<td align="left">3</td>
+<td align="left">简洁</td>
+<td align="left">只能登陆github评论</td>
+</tr>
+<tr>
+<td align="left">Disqus</td>
+<td align="left">1</td>
+<td align="left"></td>
+<td align="left">需要翻*墙</td>
+</tr>
+</tbody></table>
+<h4 id="4-1Valine"><a href="#4-1Valine" class="headerlink" title="4.1Valine"></a>4.1Valine</h4><p>注册Valine账户</p>
+<blockquote>
+<p><a href="https://leancloud.cn/dashboard/applist.html" target="_blank" rel="noopener">https://leancloud.cn/dashboard/applist.html</a></p>
+</blockquote>
+<p>文章中添加字段</p>
+<p><code>comments: true</code></p>
+<p>主题文件中进行设置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">valine:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  appid:  <span class="comment"># Your leancloud application appid</span></span><br><span class="line">  appkey:  <span class="comment"># Your leancloud application appkey</span></span><br><span class="line">  notify: <span class="literal">false</span> <span class="comment"># Mail notifier</span></span><br><span class="line">  verify: <span class="literal">false</span> <span class="comment"># Verification code</span></span><br><span class="line">  placeholder: Just go go <span class="comment"># Comment box placeholder</span></span><br><span class="line">  avatar: mm <span class="comment"># Gravatar style</span></span><br><span class="line">  guest_info: nick,mail,link <span class="comment"># Custom comment header</span></span><br><span class="line">  pageSize: 10 <span class="comment"># Pagination size</span></span><br><span class="line">  language: zh-cn <span class="comment"># Language, available values: en, zh-cn</span></span><br><span class="line">  visitor: <span class="literal">false</span> <span class="comment"># Article reading statistic</span></span><br><span class="line">  comment_count: <span class="literal">true</span> <span class="comment"># If false, comment count will only be displayed in post page, not in home page</span></span><br><span class="line">  recordIP: <span class="literal">false</span> <span class="comment"># Whether to record the commenter IP</span></span><br><span class="line">  serverURLs: <span class="comment"># When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)</span></span><br><span class="line">  <span class="comment">#post_meta_order: 0</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-搜索"><a href="#5-搜索" class="headerlink" title="5.搜索"></a>5.搜索</h3><p>使用本地插件配置搜索数据库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
+<p><code>hexo/_config.yml</code>文件配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;search:  path: search.xml  field: post  format: html  limit: 10000&#96;</span><br></pre></td></tr></table></figure>
+
+<p><code>next/_config.yml</code>文件中配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># If auto, trigger search by changing input.</span></span><br><span class="line">  <span class="comment"># If manual, trigger search by pressing enter key or search button.</span></span><br><span class="line">  trigger: auto</span><br><span class="line">  <span class="comment"># Show top n results per article, show all results by setting to -1</span></span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  <span class="comment"># Unescape html strings to the readable one.</span></span><br><span class="line">  unescape: <span class="literal">false</span></span><br><span class="line">  <span class="comment"># Preload the search data when the page loads.</span></span><br><span class="line">  preload: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
 
 
+<h3 id="6-自定义标签"><a href="#6-自定义标签" class="headerlink" title="6.自定义标签"></a>6.自定义标签</h3><p>hexo生成标签页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"新的标签"</span></span><br></pre></td></tr></table></figure>
+
+<p>在标签页面md文件中指定类型为标签</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 新的标签</span><br><span class="line">date: 2020-03-22 08:39:29</span><br><span class="line"><span class="built_in">type</span>: tags</span><br></pre></td></tr></table></figure>
+
+<p>在post文章中使用标签</p>
+<ul>
+<li>多个标签使用<code>-</code>进行区分</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: hexo服务搭建</span><br><span class="line">comments: <span class="literal">true</span></span><br><span class="line">author: zzz</span><br><span class="line">date: &#123;date&#125;</span><br><span class="line">categories: </span><br><span class="line">	- <span class="built_in">test</span></span><br><span class="line">tags:</span><br><span class="line">	- hexo</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="7-首页进行文章截取"><a href="#7-首页进行文章截取" class="headerlink" title="7.首页进行文章截取"></a>7.首页进行文章截取</h3><p>编辑<code>theme/_config.yml</code>文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">excerpt_description: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Read more button</span></span><br><span class="line"><span class="comment"># If true, the read more button will be displayed in excerpt section.</span></span><br><span class="line">read_more_btn: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>下载对应插件</p>
+<p><code>npm i hexo-excerpt</code></p>
+<p>另外一种可以使用<code>&lt;!-- more --&gt;</code>在md文件中实现更加精准的控制</p>
+<h3 id="8-静态资源压缩"><a href="#8-静态资源压缩" class="headerlink" title="8.静态资源压缩"></a>8.静态资源压缩</h3><p>一般将css和js文件中的空格和换行符进行压缩，一定程度上能减少网络延迟</p>
+<ul>
+<li><p>安装gulp 命令</p>
+<p>站点根目录下运行</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install gulp</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装gulp插件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp-minify-css --save</span><br><span class="line">npm install gulp-uglify --save</span><br><span class="line">npm install gulp-htmlmin --save</span><br><span class="line">npm install gulp-htmlclean --save</span><br><span class="line">npm install gulp-imagemin --save</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>压缩规则文件</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">'gulp'</span>);</span><br><span class="line">var minifycss = require(<span class="string">'gulp-minify-css'</span>);</span><br><span class="line">var uglify = require(<span class="string">'gulp-uglify'</span>);</span><br><span class="line">var htmlmin = require(<span class="string">'gulp-htmlmin'</span>);</span><br><span class="line">var htmlclean = require(<span class="string">'gulp-htmlclean'</span>);</span><br><span class="line">var imagemin = require(<span class="string">'gulp-imagemin'</span>);</span><br><span class="line">// 压缩css文件</span><br><span class="line">gulp.task(<span class="string">'minify-css'</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">  .pipe(minifycss())</span><br><span class="line">  .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩html文件</span><br><span class="line">gulp.task(<span class="string">'minify-html'</span>,  gulp.series(<span class="string">'minify-css'</span>,<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> gulp.src(<span class="string">'./public/**/*.html'</span>)</span><br><span class="line">  .pipe(htmlclean())</span><br><span class="line">  .pipe(htmlmin(&#123;</span><br><span class="line">    removeComments: <span class="literal">true</span>,</span><br><span class="line">    minifyJS: <span class="literal">true</span>,</span><br><span class="line">    minifyCSS: <span class="literal">true</span>,</span><br><span class="line">    minifyURLs: <span class="literal">true</span>,</span><br><span class="line">  &#125;))</span><br><span class="line">  .pipe(gulp.dest(<span class="string">'./public'</span>))</span><br><span class="line">&#125;));</span><br><span class="line">// 压缩js文件</span><br><span class="line">gulp.task(<span class="string">'minify-js'</span>, gulp.series(<span class="string">'minify-html'</span>,<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> gulp.src([<span class="string">'./public/**/.js'</span>,<span class="string">'!./public/js/**/*min.js'</span>])</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;));</span><br><span class="line">// 压缩 public/demo 目录内图片</span><br><span class="line">gulp.task(<span class="string">'minify-images'</span>, gulp.series(<span class="string">'minify-js'</span>,<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    gulp.src(<span class="string">'./public/demo/**/*.*'</span>)</span><br><span class="line">        .pipe(imagemin(&#123;</span><br><span class="line">           optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）</span><br><span class="line">           progressive: <span class="literal">true</span>, //类型：Boolean 默认：<span class="literal">false</span> 无损压缩jpg图片</span><br><span class="line">           interlaced: <span class="literal">false</span>, //类型：Boolean 默认：<span class="literal">false</span> 隔行扫描gif进行渲染</span><br><span class="line">           multipass: <span class="literal">false</span>, //类型：Boolean 默认：<span class="literal">false</span> 多次优化svg直到完全优化</span><br><span class="line">        &#125;))</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'./public/uploads'</span>));</span><br><span class="line">&#125;));</span><br><span class="line">// 默认任务</span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.series(<span class="string">'minify-css'</span>,<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> gulp.src(<span class="string">'./public/**/*.css'</span>)</span><br><span class="line">  .pipe(minifycss())</span><br><span class="line">  .pipe(gulp.dest(<span class="string">'./public'</span>));</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在hexo 编译生成html文件后执行压缩即可</li>
+</ul>
+<p><code>hexo g &amp;&amp; gulp &amp;&amp; hexo d</code></p>
+<p>​    </p>
+<h3 id="9-保存原始post文件和主题配置文件"><a href="#9-保存原始post文件和主题配置文件" class="headerlink" title="9.保存原始post文件和主题配置文件"></a>9.保存原始post文件和主题配置文件</h3><h4 id="9-1新建空分支"><a href="#9-1新建空分支" class="headerlink" title="9.1新建空分支"></a>9.1新建空分支</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#先克隆仓库</span></span><br><span class="line"> git <span class="built_in">clone</span> git@e.coding.net:biocodehub/codeHub.git</span><br><span class="line"><span class="comment"># 进入仓库</span></span><br><span class="line"><span class="built_in">cd</span> codeHub</span><br><span class="line"><span class="comment"># 创建新的分支</span></span><br><span class="line">git checkout --orphan <span class="built_in">source</span></span><br><span class="line"><span class="comment"># 删除当前分支所有文件</span></span><br><span class="line">git rm -rf .</span><br><span class="line"><span class="comment"># 创建一个文件并提交到当前分支</span></span><br><span class="line">$ <span class="built_in">echo</span> \"My GitHub Page\" &gt; index.html</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -a -m \"new branch <span class="built_in">source</span>\"</span><br><span class="line">$ git push origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+
+<p>登录远程仓库，手动删除<code>index.html</code>就变成空的分支了</p>
+<h4 id="9-2提交hexo源码"><a href="#9-2提交hexo源码" class="headerlink" title="9.2提交hexo源码"></a>9.2提交hexo源码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 站点初始化仓库</span></span><br><span class="line"><span class="built_in">cd</span> codeHub</span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 添加远程地址</span></span><br><span class="line">git remote add origin “仓库地址<span class="string">"</span></span><br><span class="line"><span class="string"># 编辑</span></span><br></pre></td></tr></table></figure>
+
+<p><code>gitignore</code>文件 ,选择推送的文件</p>
+<p>在添加要推送的文件之间，先将主题下的<code>\themes\next\.git</code>文件夹删除，git不允许一个仓库包含另外一个仓库。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#获取远端分析</span></span><br><span class="line">git fetch</span><br><span class="line"><span class="comment">#切换到origin source分支</span></span><br><span class="line">git checkout origin/<span class="built_in">source</span></span><br><span class="line"><span class="comment">#新建本地分支</span></span><br><span class="line">git checkout -b <span class="built_in">source</span></span><br><span class="line"><span class="comment">#将本地分支与远端分支关联</span></span><br><span class="line">git branch -u origin/<span class="built_in">source</span> <span class="built_in">source</span></span><br><span class="line"><span class="comment">#开始上传文件</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"code Hub source code"</span></span><br><span class="line">git push origin <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="9-3克隆远端源码"><a href="#9-3克隆远端源码" class="headerlink" title="9.3克隆远端源码"></a>9.3克隆远端源码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> -b <span class="built_in">source</span> git@e.coding.net:biocodehub/codeHub.git</span><br><span class="line">$ hexo s</span><br><span class="line">$ npm install hexo-deployer-git -save</span><br><span class="line"><span class="comment"># 推送到远端</span></span><br><span class="line">$ hexo g &amp;&amp; gulp hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="10-参考"><a href="#10-参考" class="headerlink" title="10.参考"></a>10.参考</h3><ol>
+<li>遇见西门 <a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">https://www.simon96.online/2018/10/12/hexo-tutorial/</a> </li>
+<li>Next  <a href="https://theme-next.org/docs/" target="_blank" rel="noopener">https://theme-next.org/docs/</a> </li>
+<li>git仓库推送 <a href="https://blog.csdn.net/wankui/article/details/53328369" target="_blank" rel="noopener">https://blog.csdn.net/wankui/article/details/53328369</a> </li>
+</ol>
 
     </div>
 
@@ -425,7 +577,7 @@
 <div>
 <ul class="post-copyright">
   <li class="post-copyright-author">
-    <strong>Post author:  </strong>zzz
+    <strong>Post author:  </strong>zpliu
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
@@ -513,7 +665,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo服务搭建"><span class="nav-number">1.</span> <span class="nav-text">hexo服务搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化hexo"><span class="nav-number">1.0.1.</span> <span class="nav-text">初始化hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到云端"><span class="nav-number">1.0.2.</span> <span class="nav-text">部署到云端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-GithubPage进行部署"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">1.GithubPage进行部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-部署到腾讯云"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">2.部署到腾讯云</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义主题"><span class="nav-number">1.0.3.</span> <span class="nav-text">自定义主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#主题安装"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">主题安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主题优化"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">主题优化</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo服务搭建"><span class="nav-number">1.</span> <span class="nav-text">hexo服务搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-初始化hexo"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.初始化hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-部署到云端"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.部署到云端</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1GithubPage进行部署"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">2.1GithubPage进行部署</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2部署到腾讯云"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">2.2部署到腾讯云</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-自定义主题"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.自定义主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1主题安装"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">3.1主题安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2主题优化"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">3.2主题优化</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-第三方评论系统"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.第三方评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1Valine"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">4.1Valine</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-搜索"><span class="nav-number">1.0.5.</span> <span class="nav-text">5.搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-自定义标签"><span class="nav-number">1.0.6.</span> <span class="nav-text">6.自定义标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-首页进行文章截取"><span class="nav-number">1.0.7.</span> <span class="nav-text">7.首页进行文章截取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-静态资源压缩"><span class="nav-number">1.0.8.</span> <span class="nav-text">8.静态资源压缩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-保存原始post文件和主题配置文件"><span class="nav-number">1.0.9.</span> <span class="nav-text">9.保存原始post文件和主题配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-1新建空分支"><span class="nav-number">1.0.9.1.</span> <span class="nav-text">9.1新建空分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-2提交hexo源码"><span class="nav-number">1.0.9.2.</span> <span class="nav-text">9.2提交hexo源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-3克隆远端源码"><span class="nav-number">1.0.9.3.</span> <span class="nav-text">9.3克隆远端源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-参考"><span class="nav-number">1.0.10.</span> <span class="nav-text">10.参考</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
