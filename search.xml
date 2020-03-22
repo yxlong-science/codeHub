@@ -460,6 +460,8 @@
 
 <p>修改主题文件中swig文件实现自定义</p>
 <p><code>\themes\next\layout\_third-party\statistics\busuanzi-counter.swig</code></p>
+<p>修改文章顶部栏目</p>
+<p><code>\themes\next\layout\_macro\post.swig</code></p>
 <h3 id="11-参考"><a href="#11-参考" class="headerlink" title="11.参考"></a>11.参考</h3><ol>
 <li>遇见西门 <a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">https://www.simon96.online/2018/10/12/hexo-tutorial/</a> </li>
 <li>Next  <a href="https://theme-next.org/docs/" target="_blank" rel="noopener">https://theme-next.org/docs/</a> </li>
