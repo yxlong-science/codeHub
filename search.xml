@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>04vscode与服务端R交互</title>
+    <url>/codeHub/2020/03/22/04vscode%E4%B8%8E%E6%9C%8D%E5%8A%A1%E7%AB%AFR%E4%BA%A4%E4%BA%92/</url>
+    <content><![CDATA[<span class="label success">vscode</span> 一款让人爱不释手的IDE，也是前端工程师一大杀器。在window上使用R对数据进行操作，当数据量太大的时候，电脑就会吃不消；而服务端的R一看起来就灰常的枯燥。加上最近vscode增加了对R语言的支持，使得在vscode中编写R脚本变成现实，vscode多session的特点使得能够同时打开多个窗口使用服务端的R进行大数据的计算。
+
+<a id="more"></a>
+
+<p>服务端R使用常见3种方法</p>
+<ul>
+<li>1.<code>Rstudio-server</code>建立网页版的Rstudio，需要管理员权限</li>
+<li>2.使用conda安装Rstudio，再使用x-manger将信号转发，软件收费</li>
+<li>3.使用vscode与连接服务器，直接与服务端进行交互</li>
+</ul>
+<p>我使用的是第3种方法</p>
+<h3 id="1-vscode安装插件"><a href="#1-vscode安装插件" class="headerlink" title="1.vscode安装插件"></a>1.vscode安装插件</h3><p>使用<code>Remote-SSH</code>插件连接服务器</p>
+<ul>
+<li>点击魔方图标，搜索关键字<code>remote-ssh</code></li>
+<li>下载对应的插件即可</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3XwhHP.png" alt="插件下载"></p>
+<h3 id="2-使用Remote-SSH连接·服务器"><a href="#2-使用Remote-SSH连接·服务器" class="headerlink" title="2.使用Remote-SSH连接·服务器"></a>2.使用<code>Remote-SSH</code>连接·服务器</h3><h4 id="2-1如下所示进行信息的配置"><a href="#2-1如下所示进行信息的配置" class="headerlink" title="2.1如下所示进行信息的配置"></a>2.1如下所示进行信息的配置</h4><p> <img data-src="https://s2.ax1x.com/2020/03/07/3Xdbex.png" alt="3Xdbex.png"></p>
+<h4 id="2-2配置信息如下"><a href="#2-2配置信息如下" class="headerlink" title="2.2配置信息如下"></a>2.2配置信息如下</h4><ul>
+<li><p>如果存在墙的话，可以使用x-shell隧道将信号转发到本地</p>
+<p>参考 <a href="https://zpliu.gitbook.io/booknote/mysql/02sqlyog-ruan-jian-pei-zhi" target="_blank" rel="noopener">https://zpliu.gitbook.io/booknote/mysql/02sqlyog-ruan-jian-pei-zhi</a> 进行隧道转发</p>
+</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3XdfFU.png" alt="3XdfFU.png"></p>
+<h3 id="3-验证密码"><a href="#3-验证密码" class="headerlink" title="3.验证密码"></a>3.验证密码</h3><ul>
+<li>密码输入后就登录成功了</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3X02PU.png" alt="3X02PU.png"></p>
+<ul>
+<li><p>选择要显示的目录，这里需要再一次输入密码</p>
+<p><strong><em>这里选择<code>.vscode</code>目录是方便vscode根据文件的变化情况进行自动刷新</em></strong></p>
+</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3XBCIf.png" alt="3XBCIf.png"></p>
+<ul>
+<li>登录成功后的样子</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3XDOud.png" alt="3XDOud.png"></p>
+<h3 id="4-给服务器装vscode的插件"><a href="#4-给服务器装vscode的插件" class="headerlink" title="4.给服务器装vscode的插件"></a>4.给服务器装vscode的插件</h3><ul>
+<li><code>R</code></li>
+<li><code>R LSP Client</code></li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3XsCIx.png" alt="3XsCIx.png"></p>
+<h4 id="4-1分别对插件R和R-LSP-Clint进行配置"><a href="#4-1分别对插件R和R-LSP-Clint进行配置" class="headerlink" title="4.1分别对插件R和R LSP Clint进行配置"></a>4.1分别对插件<code>R</code>和<code>R LSP Clint</code>进行配置</h4><ul>
+<li>主要就是将<strong>服务器端的R执行脚本绝对路径</strong>添加进去</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3XyY9K.png" alt="3XyY9K.png"></p>
+<ul>
+<li><code>R LSP Client</code>插件也是同样的进行配置</li>
+</ul>
+<h3 id="5-重启vscode"><a href="#5-重启vscode" class="headerlink" title="5.重启vscode"></a>5.重启vscode</h3><ul>
+<li>再次输出服务器密码进行登录</li>
+<li>在目录下创建一个新的<code>test.R</code>文件</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3X6yZ9.png" alt="3X6yZ9.png"></p>
+<ul>
+<li><p>在<code>test.R</code>文件中编写脚本</p>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">install.packages(<span class="string">"ggplot2"</span>)</span><br><span class="line"><span class="keyword">require</span>(ggplot2)</span><br><span class="line">qplot(carat, price, data = diamonds, xlab = <span class="string">"hhh"</span>, xlim = c(<span class="number">1</span>, <span class="number">5</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>快捷键<code>ctrl + enter</code>按行执行脚本</p>
+</li>
+<li><p><code>ctrl + shift +s</code>执行整个文件</p>
+</li>
+</ul>
+<h4 id="5-1最终效果"><a href="#5-1最终效果" class="headerlink" title="5.1最终效果"></a>5.1最终效果</h4><ul>
+<li>vscode能够自动跟踪文件的变化，刷新图片进行显示</li>
+</ul>
+<p><img data-src="https://s2.ax1x.com/2020/03/07/3X6xsg.png" alt="3X6xsg.png"></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ol>
+<li><a href="https://www.jianshu.com/p/0740b08e2a37" target="_blank" rel="noopener">https://www.jianshu.com/p/0740b08e2a37</a> </li>
+<li><a href="https://links.jianshu.com/go?to=https%3A%2F%2Frenkun.me%2F2019%2F12%2F11%2Fwriting-r-in-vscode-a-fresh-start%2F" target="_blank" rel="noopener">Writing R in VSCode: A Fresh Start</a></li>
+<li><a href="https://links.jianshu.com/go?to=https%3A%2F%2Frenkun.me%2F2019%2F12%2F26%2Fwriting-r-in-vscode-interacting-with-an-r-session%2F" target="_blank" rel="noopener">Writing R in VSCode: Interacting with an R session</a></li>
+<li><a href="https://links.jianshu.com/go?to=https%3A%2F%2Fcode.visualstudio.com%2Fdocs%2Fremote%2Fssh" target="_blank" rel="noopener">Remote Development using SSH</a></li>
+<li>[Quick start: SSH key](</li>
+</ol>
+]]></content>
+      <categories>
+        <category>实用工具</category>
+      </categories>
+  </entry>
+  <entry>
     <title>circos作图基础</title>
     <url>/codeHub/2020/03/22/03circos%E4%BD%9C%E5%9B%BE%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h2 id="circos的简介"><a href="#circos的简介" class="headerlink" title="circos的简介"></a>circos的简介</h2><p>​    众所周知，生物信息学是一个以庞大的数据量为基础的学科，这也就是使得结果的可视化变得有些困难，随着生物信息的发展，其辅助分析工具也迅速增多，Martin Krzywinski等人开发的Circos就在一定程度上解决了可视化困难这个问题。Circos是一个可视化数据和信息的软件包。它以圆形布局可视化数据——这使得Circos非常适合探索对象或位置之间的关系。它是创建高质量信息图表和插图的理想工具，具有丰富的分层数据和令人愉快的对称性。你可以根据你的受众调整其焦点和细节并且可以很好地控制图中的每个元素，此外，其具备高度自动化的特点，是由纯文本配置文件控制，十分的方便快捷。</p>
