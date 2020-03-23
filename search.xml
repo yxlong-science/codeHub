@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>circos进阶</title>
+    <url>/codeHub/2020/03/23/circos%E8%BF%9B%E9%98%B6/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>hexo服务搭建</title>
     <url>/codeHub/2020/03/23/01hexo%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="hexo服务搭建"><a href="#hexo服务搭建" class="headerlink" title="hexo服务搭建"></a>hexo服务搭建</h1><span class="label success">Hexo</span>  一款简洁并且高效的博客框架，结合markdown语法，让你的想法展现的淋漓尽致。通过本地编译markdown文件生成html 静态文件，部署到云端；使得笔记得到永久保存。利用Github、腾讯云等免费代码仓库存储服务，让你能够随时随地编辑；不受设备影响。
